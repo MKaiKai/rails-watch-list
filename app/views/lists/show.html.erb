@@ -1,0 +1,12 @@
+<div class="row">
+  <h1> Here are the details of #{@list.name} </h1>
+
+  <div class="col-4">
+    <h2><%= @movie.title %></h2>
+    <p><%= @movie.overview %></p>
+    <p><%= @movie.poster_url %></p>
+    <p><%= @movie.rating %></p>
+</div>
+  <span><%= link_to "Back to ALL", list_path(@list) %> Back to ALL</span>
+  <span><%= link_to "LINK", list_path(@list) %> LINK</span>
+</div>
