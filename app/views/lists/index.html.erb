@@ -1,9 +1,9 @@
 <div class="container">
-  <h1>List of ALL LISTS</h1>
+  <h1>List of ALL</h1>
 
   <ul>
   <% @lists.each do |list| %>
-    <li><%= link_to list.name list_path(list) %></li>
+    <li><%= link_to list.name, list_path(@list) %></li>
     <% end %>
   </ul>
 </div>
