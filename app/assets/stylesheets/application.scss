@@ -10,3 +10,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.list-card {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}

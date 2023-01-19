@@ -1,9 +1,10 @@
 <div class="container">
 
-
-  <ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-    <% end %>
-  </ul>
+  <% @lists.each do |list| %> <br>
+    <div class="card" style="width: 18rem;">
+    <%= list.photo.attached? ? cl_image_tag(list.photo.key) : cl_image_tag('https://clipground.com/images/popcorn-vector-clipart-5.png') %>
+        <h5 class="card-title"><%= list.name %></h5>
+        <%= link_to "list", list_path(list), class: "btn btn-primary" %>
+      </div>
+  <% end %>
 </div>
