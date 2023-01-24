@@ -1,13 +1,11 @@
 <div class="container">
-  <div class="col-md">
-  <div class="row">
-    <h1> Here are the details of: </h1><br>
-
-    <div class="col-4">
-      <h2><%= @list.name %></h2>
+  <div class="card text-center">
+    <div class="card-header">
+      Here are the details of:
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"> <p><%= @list.name.upcase %></p></h5>
+        <a href="/lists" class="btn btn-primary">Back to ALL</a>
+    </div>
   </div>
-    <%= link_to "Back to ALL", root_path %>
-  </div>
-</div>
-
 </div>

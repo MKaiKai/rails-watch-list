@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsWatchList</title>
+    <title>Rails Watch List</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
-    <div class="container">
-    <h1>My Rails Watch List</h1>
-      <%= link_to "Add List", new_list_path %>
-    </div>
+    <body>
+      <div class="container">
+          <h1> Rails Watch List</h1>
+      </div>
 
-    <%= yield %>
-  </body>
-</html>
+      <div>
+        <%= yield %>
+      <div>
+    </body>
+  </html>
